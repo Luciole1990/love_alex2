@@ -7,7 +7,6 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         * {
             margin: 0;
@@ -34,15 +33,15 @@
                 opacity: 0;
             }
             10% {
-                transform: scale(1.2) rotate(var(--rotation));
+                transform: scale(1.2);
                 opacity: 1;
             }
             90% {
-                transform: scale(1) rotate(var(--rotation));
+                transform: scale(1);
                 opacity: 1;
             }
             100% {
-                transform: scale(0) rotate(var(--rotation));
+                transform: scale(0);
                 opacity: 0;
             }
         }
@@ -102,13 +101,15 @@
                 "Je suis parfois ailleurs mais tu ne me quittes jamais vraiment"
             ];
 
+            // Vos photos d'amour 💜
             const imageUrls = [
-                "https://i.ibb.co/rKm33P9/564050128-1114620127463094-1891120447058233483-n.jpg",
-                "https://i.ibb.co/FLyG6sm/574258099-3366086813548774-4519605770066445575-n.jpg",
-                "https://i.ibb.co/5xcD9b8/509599521-3220317311459059-5235909106817746224-n.jpg",
-                "https://i.ibb.co/ZzfXJVg/569415745-1122333020025138-7519391913372229892-n.jpg",
-                "https://i.ibb.co/nsRVNdD/9964f5d3-05d8-4415-b07d-dd8b7932e20e.jpg",
-                "https://i.ibb.co/JFt6wGK/571213872-1123604373231336-903184377233443159-n.jpg"
+                "https://i.postimg.cc/tX1j1zLV/photo1.jpg",
+                "https://i.postimg.cc/KzrV244t/photo2.jpg",
+                "https://i.postimg.cc/76nYpzcN/photo3.jpg",
+                "https://i.postimg.cc/y6n8jF0B/photo4.jpg",
+                "https://i.postimg.cc/kXpX3q1P/photo5.jpg",
+                "https://i.postimg.cc/ydjsfHg5/photo6.jpg",
+                "https://i.postimg.cc/nrwZJG10/photo7.jpg"
             ];
 
             const [currentMessage, setCurrentMessage] = useState(messages[0]);
